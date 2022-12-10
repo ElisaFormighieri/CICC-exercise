@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Semantic HTML to HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/message.css" />
+    <link rel="stylesheet" href="css/result.css" />
+  </head>
+
+  <body>
+    <div class="site-wrapper">
+      <header class="header">
+        <div class="site-header__title">Messages</div>
+      </header>
+
+      <main class="main">
+        <article class="article">
+          <div class="message__author">Daniel</div>
+          <p class="message__content">Where should we meet later?</p>
+          <time datetime="2018-03-25 07:25:00">Mar 25, 2018 7:25pm</time>
+        </article>
+
+        <article class="article">
+          <div class="message__author">Mike</div>
+          <p class="message__content">
+            Let's meet at the CICCC Tech Campus.
+            <a href="https://goo.gl/maps/kDnzxXVewF1dYqh58" target="_blank"
+              >https://goo.gl/maps/kDnzxXVewF1dYqh58</a
+            >
+          </p>
+          <time datetime="2018-03-25 07:35:00">Mar 25, 2018 7:35pm</time>
+        </article>
+
+        <article class="article">
+          <div class="message__author">Daniel</div>
+          <p class="message__content">
+            <img
+              width="100"
+              src="https://media.giphy.com/media/lrDMG46JjKiovLbkn8/giphy.gif"
+              alt=""
+            />
+          </p>
+          <time datetime="2018-03-25 07:38:00">Mar 25, 2018 7:38pm</time>
+        </article>
+      </main>
+
+      <div id="result" class="result"></div>
+    </div>
+  </body>
+</html>
