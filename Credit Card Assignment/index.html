@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Credit Card</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <form>
+      <section id="credit-card-front">
+        <div>
+          <input
+            id="holderOfCard"
+            name="holderOfCard"
+            type="text"
+            placeholder="Holder of card"
+            required
+          />
+        </div>
+
+        <div>
+          <input
+            id="numberOfCard"
+            name="numberOfCard"
+            type="text"
+            placeholder="Number of card"
+            required
+          />
+        </div>
+
+        <p>VALID THRU</p>
+
+        <div class="date-container">
+          <div class="date-inputs">
+            <input
+              type="number"
+              name="month"
+              id="month"
+              placeholder="MM"
+              required
+            />
+
+            <input
+              type="number"
+              name="year"
+              id="year"
+              placeholder="YY"
+              required
+            />
+            <div class="icons-container">
+              <img src="./icons/mastercard.png" alt="icon-mastercard" />
+              <img src="./icons/visa-credit-card.png" alt="icon-visa" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="credit-card-back">
+        <div class="strip"></div>
+
+        <div class="cvc-container">
+          <input
+            type="number"
+            name="cvc"
+            id="cvc"
+            required
+            placeholder="CVC"
+            minlength="3"
+            maxlength="4"
+          />
+        </div>
+      </section>
+
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
