@@ -30,3 +30,13 @@ function showMyImage() {
   hideMeButton.classList.remove('displayNone')
   showMeButton.classList.add('displayNone')
 }
+
+function newImage() {
+  document.getElementById('image').src =
+    'https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
+}
+
+function backOldImage() {
+  document.getElementById('image').src =
+    'https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
+}
