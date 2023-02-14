@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Zeyada&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="content-nav">
+        <div class="navbar">
+          <img
+            class="popcorn-icon"
+            src="./images/popcorn.png"
+            alt="popcorn-icon"
+          />
+          <h1>WebMovies</h1>
+
+          <div class="search-container">
+            <input type="text" placeholder="Search" id="search-input" />
+            <button type="button" onclick="searchMovie()">
+              <img class="search-icon" src="./images/search.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="filter-menu">
+      <ul class="menu">
+        <li onclick="applyGenreFilter(28)" class="item-menu">Action</li>
+        <li onclick="applyGenreFilter(12)" class="item-menu">Adventure</li>
+        <li onclick="applyGenreFilter(16)" class="item-menu">Animation</li>
+        <li onclick="applyGenreFilter(35)" class="item-menu">Comedy</li>
+        <li onclick="applyGenreFilter(80)" class="item-menu">Crime</li>
+        <li onclick="applyGenreFilter(99)" class="item-menu">Documentary</li>
+        <li onclick="applyGenreFilter(10751)" class="item-menu">Family</li>
+        <li onclick="applyGenreFilter(14)" class="item-menu">Fantasy</li>
+        <li onclick="applyGenreFilter(36)" class="item-menu">History</li>
+        <li onclick="applyGenreFilter(27)" class="item-menu">Horror</li>
+        <li onclick="applyGenreFilter(10402)" class="item-menu">Music</li>
+        <li onclick="applyGenreFilter(9648)" class="item-menu">Mystery</li>
+        <li onclick="applyGenreFilter(10749)" class="item-menu">Romance</li>
+        <li onclick="applyGenreFilter(878)" class="item-menu">
+          Science Fiction
+        </li>
+        <li onclick="applyGenreFilter(10770)" class="item-menu">TV Movie</li>
+        <li onclick="applyGenreFilter(53)" class="item-menu">Thriller</li>
+        <li onclick="applyGenreFilter(10752)" class="item-menu">War</li>
+        <li onclick="applyGenreFilter(37)" class="item-menu">Western</li>
+      </ul>
+    </div>
+    <div id="container-movies"></div>
+  </body>
+</html>
